@@ -1,4 +1,4 @@
-# 401-Uauthorized
+# 401-Unauthorized
 
  This mini project is done by,
  22CS001 - Amit Kumar
