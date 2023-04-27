@@ -7,10 +7,9 @@
  
 This is simple BMI calculator.
 
+In this, you have to input the values like weight and height and it will give you your BMI and then provide you some other information.
 
-In this, you have to input the value like weight and height and it will give you your BMI and then provide you some other information.
-
-if you are overweight then how much weight you would required to loose to come under the normal condition, etc.
+For example, if you are overweight then how much weight you would required to loose to come under the normal condition, etc.
 
 
 Regards,
