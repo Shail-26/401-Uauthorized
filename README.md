@@ -1,20 +1,27 @@
-# 401-Unauthorized
+# BMI Calculator
 
- This mini project is done by,
- 22CS001 - Amit Kumar
- 22CS002 - Aditya Pomal
- 22CS035 - Shail Macwan
+#### This program can give you your BMI, and with the help of this you can manage your body.
+
+
+
+
+## Let's Start
+
  
-This is simple BMI calculator.
+#### To start, run the BMI Calculator.cpp file in any C++ IDE (prefer CodeBlocks and Visual Studio Code).
+ Enter some of your information like weight(in kgs) and height(in feets).
+ 
+This program can only take inputs in integer and float, can't take inputs in string for now.
 
-In this, you have to input the values like weight and height and it will give you your BMI and then provide you some other information.
+## Contributors
 
-weight in kilograms and height in feets.
+Enrollment Numbers : **22CS001, 22CS002, 22CS035.**
 
-For example, if you are overweight then how much weight you would required to loose to come under the normal condition, etc.
+Name               : **Amitkumar, Aditya Pomal, Shail Macwan.**
 
 
-Regards,
-401-Unauthorized.
+## Language
 
-Thank you.
+[![imagesheild](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://img.shields.io/)
+
+#### _Thank you for using BMI Calculator. Have a healthy life._
