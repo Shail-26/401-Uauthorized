@@ -8,6 +8,18 @@ public:
     float weight, heightf, heightm, bmi;
     float min_weight, max_weight;
 
+    void welcome()
+    {
+        cout << "\n\n" << endl;
+        cout << "***       ***       ***   ********   ***        ********   *******   ****       ****   ******** " << endl;
+        cout << " ***     *****     ***    ***        ***        ***        **   **   *****     *****   ***      " << endl;
+        cout << "  ***   *** ***   ***     ********   ***        ***        **   **   *** **   ** ***   ******** " << endl;
+        cout << "   *** ***   *** ***      ***        ********   ***        **   **   ***  ** **  ***   ***      " << endl;
+        cout << "    *****     *****       ********   ********   ********   *******   ***   ***   ***   ******** " << endl;
+        cout << "\n\n" <<endl;
+        cout << "WELCOME to our project.\nTo check your BMI give the following details:\n" << endl;
+    }
+
     void get()
     {
         cout << "Enter your weight in kilograms: ";
@@ -60,6 +72,7 @@ public:
 int main()
 {
     BMI B;
+    B.welcome();
     B.get();
     B.change();
     cout << endl;
