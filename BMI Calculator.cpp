@@ -5,7 +5,7 @@ using namespace std;
 class BMI
 {
 public:
-    float weight, height, bmi;
+    float weight, heightf, heightm, bmi;
     float min_weight, max_weight;
 
     void get()
@@ -13,18 +13,22 @@ public:
         cout << "Enter your weight in kilograms: ";
         cin >> weight;
 
-        cout << "Enter your height in meters: ";
-        cin >> height;
+        cout << "Enter your height in feets: ";
+        cin >> heightf;
+    }
+    void change()
+    {
+        heightm = heightf * 0.3048;
     }
     void bmioutput()
     {
-        if(weight<=0 || height<=0){
+        if(weight<=0 || heightf<=0){
             cout << "Please enter the data correctly." << endl;
             cout << endl;
             get();
         } else {
             // Calculate the BMI
-            bmi = weight / (height * height);
+            bmi = weight / (heightm * heightm);
 
             // Output the result
             cout << "Your BMI is: " << bmi << endl;
@@ -36,19 +40,19 @@ public:
         if (bmi < 18.5) {
             cout << "You are underweight." << endl;
             // Calculate the minimum weight needed to reach normal weight
-            min_weight = 18.5 * height * height;
+            min_weight = 18.5 * heightm * heightm;
             cout << "To reach normal weight, you need to gain at least " << min_weight - weight << " kilograms." << endl;
         } else if (bmi < 25) {
             cout << "You are normal weight." << endl;
         } else if (bmi < 30) {
             cout << "You are overweight." << endl;
             // Calculate the maximum weight allowed to reach normal weight
-            max_weight = 24.9 * height * height;
+            max_weight = 24.9 * heightm * heightm;
             cout << "To reach normal weight, you need to lose at least " << weight - max_weight << " kilograms." << endl;
         } else {
             cout << "You are obese." << endl;
             // Calculate the maximum weight allowed to reach overweight category
-            max_weight = 29.9 * height * height;
+            max_weight = 29.9 * heightm * heightm;
             cout << "To reach overweight category, you need to lose at least " << weight - max_weight << " kilograms." << endl;
         }
     }
@@ -57,6 +61,7 @@ int main()
 {
     BMI B;
     B.get();
+    B.change();
     B.bmioutput();
     B.output();
     return 0;
