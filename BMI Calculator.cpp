@@ -31,7 +31,7 @@ public:
             bmi = weight / (heightm * heightm);
 
             // Output the result
-            cout << "Your BMI is: " << bmi << endl;
+            cout << "Your BMI is: " << fixed << setprecision(2) << bmi << endl;
         }
     }
     void output()
@@ -62,7 +62,13 @@ int main()
     BMI B;
     B.get();
     B.change();
+    cout << endl;
+    cout << "***************************" << endl;
     B.bmioutput();
     B.output();
+    cout << endl;
+    cout << "This mini project is done by 22CS001 - Amit Kumar,\n\t\t\t     22CS002 - Aditya Pomal,\n\t\t\t     22CS035 - Shail Macwan." << endl;
+    cout << endl;
+    cout << "------------THANK YOU------------" << endl;
     return 0;
 }
