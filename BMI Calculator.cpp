@@ -27,6 +27,16 @@ public:
 
         cout << "Enter your height in centimeters: ";
         cin >> heightf;
+        
+        if(weight<=0){
+            cout << "Please enter the data correctly." << endl;
+            cout << endl;
+            get();
+        } else if(heightf<=0){
+            cout << "Please enter the data correctly." << endl;
+            cout << endl;
+            get();
+        } 
     }
     void change()
     {
@@ -34,17 +44,11 @@ public:
     }
     void bmioutput()
     {
-        if(weight<=0 && heightf<=0){
-            cout << "Please enter the data correctly." << endl;
-            cout << endl;
-            get();
-        } else {
-            // BMI Formula
-            bmi = weight / (heightm * heightm);
+        // BMI Formula
+        bmi = weight / (heightm * heightm);
 
-            // Result
-            cout << "Your BMI is: " << fixed << setprecision(2) << bmi << endl;
-        }
+        // Result
+        cout << "Your BMI is: " << fixed << setprecision(2) << bmi << endl;
     }
     void output()
     {
