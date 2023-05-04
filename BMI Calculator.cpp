@@ -25,12 +25,12 @@ public:
         cout << "Enter your weight in kilograms: ";
         cin >> weight;
 
-        cout << "Enter your height in feets: ";
+        cout << "Enter your height in centimeters: ";
         cin >> heightf;
     }
     void change()
     {
-        heightm = heightf * 0.3048;
+        heightm = heightf * 0.01;
     }
     void bmioutput()
     {
@@ -39,10 +39,10 @@ public:
             cout << endl;
             get();
         } else {
-            // Calculate the BMI
+            // BMI Formula
             bmi = weight / (heightm * heightm);
 
-            // Output the result
+            // Result
             cout << "Your BMI is: " << fixed << setprecision(2) << bmi << endl;
         }
     }
