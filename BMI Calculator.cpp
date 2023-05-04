@@ -34,7 +34,7 @@ public:
     }
     void bmioutput()
     {
-        if(weight<=0 || heightf<=0){
+        if(weight<=0 && heightf<=0){
             cout << "Please enter the data correctly." << endl;
             cout << endl;
             get();
