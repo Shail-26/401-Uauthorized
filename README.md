@@ -1,6 +1,6 @@
 # BMI Calculator
 
-#### This program can give you your BMI, and with the help of this you can manage your body.
+#### This program can give you your BMI, and with the help of this you can healthify your body.
 
 
 
@@ -9,7 +9,7 @@
 
  
 #### To start, run the BMI Calculator.cpp file in any C++ IDE (prefer CodeBlocks and Visual Studio Code).
- Enter some of your information like weight(in kgs) and height(in feets).
+ Enter some of your information like weight(in kgs) and height(in centimeters).
  
 This program can only take inputs in integer and float, can't take inputs in string for now.
 
